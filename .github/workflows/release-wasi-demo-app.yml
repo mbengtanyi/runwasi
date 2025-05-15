@@ -23,7 +23,7 @@ jobs:
   release-wasi-demo:
     permissions:
       packages: write
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     outputs:
       wasi_demo_app: ${{ steps.get_digests.outputs.wasi_demo_app }}
       wasi_demo_oci: ${{ steps.get_digests.outputs.wasi_demo_oci }}
